@@ -1,0 +1,95 @@
+.desktop {
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.actions,
+.action,
+.link-dropdown {
+    position: relative;
+}
+
+.mobile {
+    width: 95%;
+    justify-content: space-between;
+}
+
+.nav,
+.actions,
+.link-action,
+.search {
+    align-items: center;
+}
+
+.link {
+    padding: 7.5px;
+    padding-right: 5px;
+    gap: 5px;
+}
+
+.actions {
+    gap: 7.5px;
+    height: fit-content;
+}
+
+.action > div > button {
+    height: fit-content;
+    padding: 12.5px;
+    background-color: #024873;
+    border: none;
+    color: #F2F2F2;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.search {
+    background-color: #024873;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    border-radius: 3px;
+}
+
+.action-dropdown,
+.link-dropdown-c {
+    position: absolute;
+    top: calc(100% + 5px);
+    border: 0.5px solid #EDEDED;
+    border-top: 3px solid #0378A6;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    width: 200px;
+    padding: 10px;
+    color: #012340;
+}
+
+.link-dropdown-c > a {
+    padding: 5px;
+}
+
+.link-dropdown-c > a:hover {
+    color: #0378A6;
+}
+
+.register,
+.register > button {
+    background-color: #0378A6 !important;
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 1024px) {
+    .desktop {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .login,
+    .register {
+        display: none !important;
+    }
+    .action-dropdown {
+        right: 0;
+    }
+}

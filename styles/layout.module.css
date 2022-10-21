@@ -1,0 +1,14 @@
+.app {
+    height: 100vh;
+}
+
+.top-node {
+    background-color: #012340;
+    color: #F2F2F2;
+    justify-content: center;
+    padding: 5px;
+}
+
+.bottom-node {
+    flex-grow: 1;
+}
