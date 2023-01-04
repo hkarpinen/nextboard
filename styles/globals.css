@@ -20,3 +20,15 @@ a {
 p {
   margin: 0;
 }
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}

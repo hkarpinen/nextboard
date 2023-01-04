@@ -1,95 +1,72 @@
-.desktop {
-    width: 60%;
-    justify-content: space-between;
+.nav-links-items {
+    display: flex;
+}
+
+.nav-links {
     align-items: center;
+    gap: 10px;
 }
 
-.actions,
-.action,
-.link-dropdown {
-    position: relative;
+.nav-actions {
+    display: flex;
 }
 
-.mobile {
-    width: 95%;
-    justify-content: space-between;
-}
-
-.nav,
-.actions,
-.link-action,
-.search {
-    align-items: center;
-}
-
-.link {
+.nav-link {
+    display: flex;
     padding: 7.5px;
-    padding-right: 5px;
     gap: 5px;
 }
 
-.actions {
-    gap: 7.5px;
-    height: fit-content;
+.nav-dropdown {
+    position: relative;
 }
 
-.action > div > button {
-    height: fit-content;
-    padding: 12.5px;
-    background-color: #024873;
-    border: none;
-    color: #F2F2F2;
-    border-radius: 3px;
-    font-size: 14px;
-}
-
-.search {
-    background-color: #024873;
-    padding-left: 7.5px;
-    padding-right: 7.5px;
-    border-radius: 3px;
-}
-
-.action-dropdown,
-.link-dropdown-c {
+.nav-dropdown-content {
     position: absolute;
-    top: calc(100% + 5px);
-    border: 0.5px solid #EDEDED;
-    border-top: 3px solid #0378A6;
-    background: #FFFFFF;
+    top: 100%;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
     border-radius: 3px;
-    width: 200px;
+    width: calc(100% + 50px);
+}
+
+.nav-action-content {
+    position: absolute;
+    top: 100%;
+}
+
+.nav-dropdown-content > li {
+    display: flex;
+    flex-grow: 1;
+}
+
+.nav-dropdown-content-item {
     padding: 10px;
-    color: #012340;
 }
 
-.link-dropdown-c > a {
-    padding: 5px;
+.desktop-navbar {
+    width: 100%;
 }
 
-.link-dropdown-c > a:hover {
-    color: #0378A6;
+.nav-content {
+    width: 100%;
+    justify-content: space-between;
 }
 
-.register,
-.register > button {
-    background-color: #0378A6 !important;
-    border-radius: 3px;
+.nav-dropdown-button {
+    display: flex;
+    align-items: center;
 }
 
-@media screen and (max-width: 1024px) {
-    .desktop {
-        width: 95%;
-    }
+.nav-dropdown-button > button {
+    height: 100%;
 }
 
-@media screen and (max-width: 414px) {
-    .login,
-    .register {
-        display: none !important;
-    }
-    .action-dropdown {
-        right: 0;
-    }
+.nav-action {
+    position: relative;
+}
+
+.nav-action > button {
+    color: #F2F2F2;
+    padding: 12.5px;
+    height: 100%;
 }
